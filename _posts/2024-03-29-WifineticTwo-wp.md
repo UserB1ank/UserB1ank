@@ -2,7 +2,7 @@
 title: WifineticTwo-wp
 date: '2024-03-29 00:00:00'
 permalink: /post/wififititiowiecwp-1ucsb0.html
-tagline: |-
+seoDescription: "-
   这篇文章是关于渗透测试机器WifineticTwo的攻略。主要内容包括：
 
   1. 使用nmap扫描发现目标主机开放22和8080端口，运行Python 2.7.18和Werkzeug框架的web服务
@@ -14,7 +14,7 @@ tagline: |-
   7. 在系统中发现SUID权限的二进制文件，存在缓冲区溢出漏洞
   8. 编写利用代码获得root权限
 
-  整个攻击路径涉及web应用漏洞、无线网络安全和本地权限提升等多个方面。
+  整个攻击路径涉及web应用漏洞、无线网络安全和本地权限提升等多个方面。"
 tags:
   - hackthebox
 categories:

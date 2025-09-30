@@ -21,22 +21,22 @@ footer_links:
     url: /feed.xml
     icon: fa fa-rss
   - title: GitHub
-    url: https://github.com/papierkorp
+    url: https://github.com/UserB1ank
     icon: fa fa-github
-  - title: Email
-    url: mailto:xxx@test.de
-    icon: fa fa-envelope
-  - title: Twitter
-    url: https://twitter.com
-    icon: fa fa-twitter
-  - title: Facebook
-    url: https://facebook.com
-    icon: fa fa-facebook
-  - title: Instagram
-    url: https://instagram.com
-    icon: fa fa-instagram
-  - title: Impressum
-    url: /impressum.html
+  # - title: Email
+  #   url: mailto:xxx@test.de
+  #   icon: fa fa-envelope
+  # - title: Twitter
+  #   url: https://twitter.com
+  #   icon: fa fa-twitter
+  # - title: Facebook
+  #   url: https://facebook.com
+  #   icon: fa fa-facebook
+  # - title: Instagram
+  #   url: https://instagram.com
+  #   icon: fa fa-instagram
+  # - title: Impressum
+  #   url: /impressum.html
 
 footer_sidebar:
   arrangement:

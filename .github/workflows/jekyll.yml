@@ -9,6 +9,8 @@ name: Deploy Jekyll site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
+    paths-ignore:
+      - 'assets/**'
     branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab

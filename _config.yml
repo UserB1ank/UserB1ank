@@ -78,18 +78,39 @@ paginate_path: "/:num/"
 
 include: [".md"]
 
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- # this means to ignore newlines until
   <h3>
-    This is me
+    Hello，我是UserB1ank，一个命运多舛，想要成为大牛的学习者。
   </h3>
   <p>
-    Im a german guy from bavaria currently working as a devops engineer. I will try to keep the blog in english but may switch to german any time.
+    此博客用来记录我的技术学习、生活感悟等内容，如有错误，请评论区指正。
   </p>
   <p>
-    Here you will find a collection of blogs, tutorials, snippets or introductions mainly on (mostly modern) tech.
-    Also a few bits of gaming, fitness, finances and mabye (a big maybe) cooking.
-    I may find other topics of interest as well :D
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0</a>
   </p>
+
+footer_sidebar:
+  enabled: true
+  auto: false # false = all elements will have the same width, true = each element takes what it needs
+  arrangement:  # you can rearrange the positions of the elements
+  - description  # will be the first one to be displayed
+  - tags  # second in the row ...
+  - recentposts  # will be displayed last
+  description:
+    enabled: true  # default: true
+    columns: 2  # default: 0 - if you include a list
+  categories:
+    enabled: true  # default: false
+    count: 100  # default: 100
+    columns: 5  # default: 0
+  tags:
+    enabled: true  # default: false
+    count: 100  # default: 100
+    columns: 5  # default: 0
+  recentposts:
+    enabled: true  # default: true
+    count: 10  # default: 5
+    columns: 2  # default: 0
 
 
 highlighter: rouge

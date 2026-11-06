@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./assets/hero.svg" width="100%" alt="UserB1ank — Rust and Go developer. Build, explore, repeat. Animated neon terminal with a floating robot cat." />
+<img src="./assets/hero.svg" width="100%" alt="UserB1ank — Developer. Build, explore, repeat. Animated neon terminal with a floating square robot, pixel eyes and a blinking antenna." />
 
 <br />
 
 **写代码，拆原理，偶尔也拆掉自己的 Bug。**
 
-Rust & Go · Developer tools · Cybersecurity · Terminal things
+Rust / Go / C# / Python / Java · Developer tools · Cybersecurity · Terminal things
 
 <a href="https://userb1ank.github.io/"><img src="./assets/blog.svg" width="170" alt="个人博客 · My little space" /></a>
 <a href="https://github.com/UserB1ank?tab=repositories"><img src="./assets/projects.svg" width="170" alt="我的开源项目 · Open source" /></a>
@@ -19,23 +19,23 @@ Rust & Go · Developer tools · Cybersecurity · Terminal things
 
 Oi! Oi! Oi! 我是 **UserB1ank**，一个喜欢把好奇心写进代码的开发者。
 
-现在的主力装备是 **Rust 和 Go**。喜欢造开发者工具、折腾终端，也喜欢研究网络安全。看到有趣的东西，第一反应通常是：**「让我看看它是怎么工作的。」**
+现在的主力装备是 **Rust 和 Go**，也接触过 **C#、Python、Java**。喜欢造开发者工具、折腾终端，也喜欢研究网络安全。看到有趣的东西，第一反应通常是：**「让我看看它是怎么工作的。」**
 
 | 🧑‍💻 写代码的时候 | 🎮 编辑器之外 |
 | :--- | :--- |
-| Rust / Go，和底层原理交朋友 | 游戏玩家，偶尔切换到摸鱼模式 |
+| Rust / Go，和底层原理交朋友；也接触 C# / Python / Java | 游戏玩家，偶尔切换到摸鱼模式 |
 | 开发者工具、终端应用、网络安全 | 80 年代复古风、蒸汽波、电子怀旧 |
 | 喜欢把想法做成能运行的小东西 | 对有趣的新东西保持好奇 |
 
 <br />
 
-## 🦀 Two languages. Lots of possibilities.
+## 🧰 Language toolbox. Lots of possibilities.
 
-<img src="./assets/stack.svg" width="100%" alt="技术栈横幅：Rust 与 Go。Rust 铜橙色齿轮与 Go 青色标志，配有流动光线和代码光标动效。" />
+<img src="./assets/stack.svg" width="100%" alt="动态技术栈横幅：Rust、Go、C#、Python、Java。五种语言的标志、终端命令、漂浮与流光动效。" />
 
 <div align="center">
 
-<sub>一个认真和编译器讲道理，一个把想法跑起来。两边都很好玩。</sub>
+<sub>一个认真和编译器讲道理，一个把想法跑起来。再加上 C#、Python、Java，工具箱继续扩容。</sub>
 
 </div>
 
@@ -88,6 +88,7 @@ Oi! Oi! Oi! 我是 **UserB1ank**，一个喜欢把好奇心写进代码的开发
 struct Developer {
     name: &'static str,
     main_languages: [&'static str; 2],
+    also_explored: [&'static str; 3],
     curiosity: bool,
 }
 
@@ -95,6 +96,7 @@ fn main() {
     let me = Developer {
         name: "UserB1ank",
         main_languages: ["Rust", "Go"],
+        also_explored: ["C#", "Python", "Java"],
         curiosity: true,
     };
 
@@ -103,10 +105,12 @@ fn main() {
 ```
 
 ```text
-       /\_/\
-      ( o.o )   +1 coffee
-       > ^ <    +1 curiosity
-               -1 mysterious bug (hopefully)
+        [o]
+     +-------+
+     | [] [] |   +1 coffee
+     |  ---  |   +1 curiosity
+     +-------+   -1 mysterious bug (hopefully)
+       |_|_|
 ```
 
 祝你今天的编译一次过，游戏不掉帧。谢谢你来串门！
@@ -122,6 +126,6 @@ fn main() {
 
 Custom SVG artwork and contribution dashboard for this profile. Contributions are read from GitHub by the daily [Profile visuals](https://github.com/UserB1ank/UserB1ank/actions/workflows/profile.yml) workflow.
 
-Inspired by [DenverCoder1's profile](https://github.com/DenverCoder1/DenverCoder1) and the [Awesome GitHub Profile README](https://github.com/abhisheknaiidu/awesome-github-profile-readme) gallery. Contribution snake by [Platane/snk](https://github.com/Platane/snk). Language marks from [Simple Icons](https://github.com/simple-icons/simple-icons), CC0.
+Inspired by [DenverCoder1's profile](https://github.com/DenverCoder1/DenverCoder1) and the [Awesome GitHub Profile README](https://github.com/abhisheknaiidu/awesome-github-profile-readme) gallery. Contribution snake by [Platane/snk](https://github.com/Platane/snk). Language marks from [Simple Icons](https://github.com/simple-icons/simple-icons), CC0, and [Devicon](https://github.com/devicons/devicon), [MIT](./assets/licenses/devicon.txt).
 
 </details>

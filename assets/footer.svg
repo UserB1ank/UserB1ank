@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="96" viewBox="0 0 1000 96" role="img" aria-labelledby="title">
+  <title id="title">Stay curious. Keep tinkering. — UserB1ank</title>
+  <defs><linearGradient id="line"><stop stop-color="#ffae86"/><stop offset=".5" stop-color="#95b8dd"/><stop offset="1" stop-color="#63d8ea"/></linearGradient></defs>
+  <style>text{font-family:'SFMono-Regular',Consolas,monospace}.light{animation:light 4s cubic-bezier(.45,0,.3,1) infinite}@keyframes light{0%,100%{opacity:.35}50%{opacity:1}}@media(prefers-reduced-motion:reduce){.light{animation:none}}</style>
+  <rect width="1000" height="96" rx="18" fill="#0c1320"/>
+  <path d="M32 1H968" stroke="url(#line)"/>
+  <circle cx="39" cy="48" r="5" fill="#63d8ea" class="light"/>
+  <text x="60" y="54" fill="#becce1" font-size="16">Stay curious. Keep tinkering.</text>
+  <text x="961" y="54" text-anchor="end" fill="#ffae86" font-size="14">// see you around, human.</text>
+</svg>

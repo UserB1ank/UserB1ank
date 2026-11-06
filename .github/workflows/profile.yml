@@ -1,0 +1,52 @@
+name: Profile visuals
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/render_activity.py
+      - .github/workflows/profile.yml
+  schedule:
+    - cron: '17 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-visuals
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out profile
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Render contribution dashboard
+        run: python3 scripts/render_activity.py --output dist/activity.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USER: ${{ github.repository_owner }}
+
+      - name: Generate contribution snakes
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg?color_snake=%23E58A59&color_dots=%23E8EDF4,%23BCE7EE,%2377CCDA,%2346ADBF,%232D8299
+            dist/snake-dark.svg?palette=github-dark&color_snake=%23FFB088&color_dots=%23172235,%23233F55,%232F7185,%2346ABBD,%2377E2EA
+
+      - name: Publish generated SVGs
+        uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: true
+          allow_empty_commit: false
+          jekyll: false
+          commit_message: 'chore: refresh profile visuals'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
